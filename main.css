@@ -30,4 +30,85 @@ p.more {
   display: none;
 }
 
-/* Your code here */
+
+* {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  background-color: #F5F5F5;
+  color: #464646;
+  /* Additional styles for all elements if needed */
+}
+
+a{
+  text-decoration: none;
+  padding: 0px;
+}
+
+ul >li{
+  list-style: none;
+}
+a:visited {
+  color: #800080;
+  /* Craigslist purple color */
+}
+
+/* Styling for all <a> tags on hover */
+a:hover {
+  font-weight: bold;
+  color: #800080;
+  /* Craigslist purple color */
+}
+
+/* Styling for direct child <span> elements within <a> tags on hover */
+a:hover>span {
+  font-weight: bold;
+  color: #800080;
+  /* Craigslist purple color */
+}
+.page-container{
+  max-width: 1200px;
+}
+#leftbar, #center, #rightbar{
+  float: left;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing:  border-box;
+}
+footer{
+  clear: both ;
+}
+
+#leftbar, #rightbar{
+  width: 25%;
+}
+#center{
+  width: 50%;
+  border: solid 1px #464646;
+  border-radius: 10px;
+}
+#center > div{
+  float: left;
+  width:33%
+}
+#topban h2 {
+  text-align: center;
+}
+ul.clfooter {
+  text-align: center;
+  border-top: 1px solid gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+ul.clfooter>li {
+  display: inline;
+  padding-right: 5px;
+}
+.ban::before {
+  content: "☮️";
+  /* Unicode for the peace symbol emoji */
+ 
+  margin-right: 5px;
+  /* Adjust the spacing to your preference */
+}
